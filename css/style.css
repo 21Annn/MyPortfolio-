@@ -36,14 +36,22 @@
   --dark-black: #181818;
   --basic-black: #000000;
 }
-
+/* .conteiner {
+  width: 100%;
+  height: 0 auto;
+надо отцентровать блок
+} */
 .fio-info {
   font-family: "Rubik Mono", monospace;
   font-size: 38px;
+  line-height: 45px;
+  color: var(--dark-black);
 }
 .head {
   font-family: "Rubik Mono", monospace;
   font-size: 38px;
+  line-height: 45px;
+  color: var(--basic-black);
 }
 .head-hidden {
   visibility: hidden;
@@ -51,4 +59,12 @@
 .text-site {
   font-family: "Ubuntu Mono", sans-serif;
   font-size: 14px;
+  line-height: 18px;
+  color: var(--dark-black);
+}
+.skills-style {
+  font-family: "Rubik Mono", monospace;
+  font-size: 22px;
+  line-height: 17px;
+  color: var(--basic-black);
 }
