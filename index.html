@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>My Portfolio</title>
+</head>
+<body class="conteiner">
+  <header>
+    <div class="main-navigation">
+      <img src="./img/logo.png" alt="Logo" width="100" height="27">
+      <nav>
+        <ul class="menu-list">
+          <li class="menu-item">На главную</li>
+          <li class="menu-item">Обо мне</li>
+          <li class="menu-item">Навыки</li>
+          <li class="menu-item">Портфолио</li>
+          <li class="menu-item">Контакты</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="self-info">
+        <h1 class="head-hidden">Личная информация</h1> 
+        <p class="fio-info">Долгова Анна</p>
+        <p class="text-site">Junior frontend developer <br> 25 лет, Челябинск</p>
+        <img src="" alt="Персональная фотография" width="960" height="406">
+    </div>
+    </section>
+    <section>
+      <h1 class="head">Обо мне</h1>
+      <p class="text-site text-site-info">Привет, меня зовут Семен. Я Frontend разработчик из Челябинска. Мне интересна веб-разработка и все что этим связано. <br> 
+      Сейчас я учусь на курсе "Frontend Dev" в Napoleon IT School. <br> 
+      Планирую и дальше развиваться в этой сфере. Рассмотрю любое коммерческое предложение о сотрудничестве.</p>
+    </section>
+    <section>
+      <h1 class="head">Навыки</h1>
+      <p class="text-site">используемые технологии:</p>
+      <div class="skills-list">
+        <div class="skills-item">
+          <img src="./img/html-logo.png" alt="Иконка HTML" width="161" height="182">
+          <p class="skills-style">html</p>
+        </div>
+        <div class="skills-item">
+          <img src="./img/css-logo.png" alt="Иконка CSS" width="161" height="182">
+          <p class="skills-style">css</p>
+        </div>
+        <div class="skills-item">
+          <img src="./img/javascript-logo.png" alt="Иконка JavaScript" width="161" height="182">
+          <p class="skills-style">JavaScript</p>
+        </div>
+        <div class="skills-item">
+          <img src="./img/react-logo.png" alt="Иконка React" width="161" height="147">
+          <p class="skills-style">React</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h1 class="head">Портфолио</h1>
+      <div class="portfolio">
+        <div class="content-1">
+          <img src="" alt="Пример макета" width="" height="">
+          <p class="text-site text-site-underline">MebelChel - изготовление мебели на заказ</p>
+        </div>
+        <div class="content-2">
+          <img src="" alt="Пример макета" width="" height="">
+          <p class="text-site text-site-underline">Shawarma - лучшая шаурма в городе</p>
+        </div>
+    </div>
+    </section>
+  </main>
+  <footer>
+    <section>
+      <div class="contacts">
+        <h1 class="head">Контакты</h1>
+        <p class="text-site">Хотите связаться со мной или <br> узнать больше?</p>
+        <a class="button" href="">Напиши мне</a> <!--ссылка на модалку-->
+        <div class="social-list">
+          <a href="#">
+            <img src="./img/vk.png" alt="Vk" width="75" height="75">
+          </a>
+          <a href="#">
+            <img src="./img/telegram.png" alt="Telegram" width="75" height="75">
+          </a>
+          <a href="#">
+            <img src="./img/instagram.png" alt="Instagram" width="75" height="75">
+          </a>
+          <p class="social-text">Мои аккаунты в Vk, Telegram, <br> Instagram </p>
+        </div>
+    </div>
+    </section>
+  </footer>
+  <div class="modal-form">
+    <form action="" method="get">
+      <p class="modal-text"> Оставьте заявку! <br> Я позвоню вам в ближайшее время</p> <!--посмотреть в интенсиве как называют класс-->
+      <label class="name">
+        Имя
+        <input class="field-line" type="text" name="name" value="" placeholder="">
+      </label>
+      <label class="tel">
+        Телефон
+        <input class="field-line" type="tel" name="tel" value="" placeholder="" required>
+      </label>
+      <p class="modal-text-button">*Нажимая эту кнопку вы даете согласие на обработку персональных данных</p> <!--или lable? звездочку поставить наверх-->
+      <button class="button button-submit" type="submit">Отправить</button>
+    </form>
+</div>
+</body>
+</html>

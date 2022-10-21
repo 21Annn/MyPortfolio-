@@ -1,0 +1,54 @@
+/* Fonts */
+
+@font-face {
+  font-family: "Ubuntu Mono";
+  src: url("../fonts/ubuntumono.woff2") format("woff2"),
+      url("../fonts/ubuntumono.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+ @font-face {
+  font-family: "Ubuntu Mono Bold";
+  src: url("../fonts/ubuntumonobold.woff2") format("woff2"),
+      url("../fonts/ubuntumonobold.woff") format("woff");
+  font-style: bold;
+  font-weight: 700;    
+}
+
+@font-face {
+  font-family: "Rubik Mono";
+  src: url("../fonts/rubikmonooneregular.woff2") format("woff2"),
+      url("../fonts/rubikmonooneregular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;    
+}
+
+/*
+@media screen {
+  
+} */
+
+/* Variabls */
+
+:root {
+  --dark-grey: #828282;
+  --light-grey: #F6F6F6;
+  --dark-black: #181818;
+  --basic-black: #000000;
+}
+
+.fio-info {
+  font-family: "Rubik Mono", monospace;
+  font-size: 38px;
+}
+.head {
+  font-family: "Rubik Mono", monospace;
+  font-size: 38px;
+}
+.head-hidden {
+  visibility: hidden;
+}
+.text-site {
+  font-family: "Ubuntu Mono", sans-serif;
+  font-size: 14px;
+}
