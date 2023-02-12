@@ -10,7 +10,9 @@
 <body class="conteiner">
   <header class="header">
     <div class="main-navigation">
-      <div class="logo"> <img src="./img/logo.png" alt="Logo" width="100" height="27"> </div>
+      <div class="logo"> 
+        <img src="./img/logo.png" alt="Logo" width="100" height="27">
+      </div>
       <nav class="nav">
         <ul class="menu-list">
           <li class="menu-item">
@@ -36,12 +38,14 @@
   <main class="main">
     <section class="self-info">
       <h1 class="head-hidden">Личная информация</h1>
-      <div class="wrap-about-me">  
-        <p class="head fio-info">Анна Долгова</p>
-        <p class="text about-me">Junior frontend developer <br> 25 лет, Челябинск</p>
-      </div>  
-      <img src="" alt="Персональная фотография" width="960" height="406">
-    </section>
+      <div class="wrap-about-me">
+        <div class="wrap-info">  
+          <p class="head fio-info">Анна Долгова</p>
+          <p class="text about-me">Junior frontend developer <br> 25 лет, Челябинск</p>  
+        </div>
+        <img class="person-img" src="/img/20221216-193-NapoleonIT.jpg" alt="Персональная фотография" width="960" height="406">
+      </div>
+      </section>
     <section class="information">
       <div class="wrap-information">
         <h1 class="head head-rectangle">Обо мне</h1>
@@ -68,29 +72,34 @@
           <img src="./img/javascript-logo.png" alt="Иконка JavaScript" width="161" height="182">
           <p class="skills-style">JavaScript</p>
         </div>
-        <div class="skills-item">
+        <div class="skills-item-eng">
           <img src="./img/react-logo.png" alt="Иконка React" width="161" height="147">
           <p class="skills-style">React</p>
         </div>
       </div>
     </section>
     <section class="portfolio">
-      <h1 class="head head-rectangle">Портфолио</h1>
-        <div class="content-1">
-          <img src="" alt="Пример макета-1" width="960" height="576">
-          <p class="text text-underline">Tehnomart -  Интернет-магазин строительных материалов и инструментов для ремонта </p>
-        </div>
-        <div class="content-2">
-          <img src="" alt="Пример макета-2" width="960" height="576">
-          <p class="text-site text-underline">Shawarma - лучшая шаурма в городе</p>
-        </div>
+      <div class="wrap-portfolio">
+        <h1 class="head head-rectangle">Портфолио</h1>
+          <div class="content-1">
+            <img src="img/techno.png" alt="Пример макета-1" width="960" height="576">
+            <p class="text text-underline1">Tehnomart -  Интернет-магазин строительных материалов <br> и инструментов для ремонта </p>
+          </div>
+          <div class="content-2">
+            <img src="img/screen1.png" alt="Пример макета-2" width="960" height="576">
+            <p class="text text-underline2"> Website - лучший сайт</p>
+          </div>
+      </div>  
     </section>
   </main>
   <footer>
     <section class="contacts">
+      <div class="wrap-contacts">
         <h1 class="head head-rectangle">Контакты</h1>
-        <p class="text">Хотите связаться со мной или <br> узнать больше?</p>
-        <a class="button" href="#">Напиши мне</a> <!--ссылка на модалку-->
+        <div class="wrap-feedback">
+          <p class="text text-contacts">Хотите связаться со мной или <br> узнать больше?</p>
+          <a class="button button-feedback" href="#">Напиши мне</a> <!--ссылка на модалку-->
+        </div>  
         <div class="social-list">
           <a href="#">
             <img src="./img/vk.png" alt="Vk" width="75" height="75">
@@ -102,7 +111,8 @@
             <img src="./img/instagram.png" alt="Instagram" width="75" height="75">
           </a>
           <p class="social-text">Мои аккаунты в Vk, Telegram, <br> Instagram </p>
-    </div> <!-- вставить иконки через бэкграунд в css -->
+        </div> <!-- вставить иконки через бэкграунд в css -->
+      </div>  
     </section>
   </footer>
   <div class="modal-form">
