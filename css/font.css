@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Ubuntu Mono";
+  src: url("../fonts/ubuntumono.woff2") format("woff2"),
+      url("../fonts/ubuntumono.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+ @font-face {
+  font-family: "Ubuntu Mono Bold";
+  src: url("../fonts/ubuntumonobold.woff2") format("woff2"),
+      url("../fonts/ubuntumonobold.woff") format("woff");
+  font-style: bold;
+  font-weight: 700;    
+}
+
+@font-face {
+  font-family: "Rubik Mono";
+  src: url("../fonts/rubikmonooneregular.woff2") format("woff2"),
+      url("../fonts/rubikmonooneregular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;    
+}
