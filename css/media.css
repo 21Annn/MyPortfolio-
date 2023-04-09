@@ -6,8 +6,8 @@
     padding: 15px 10px;
   }
 }
-@media (max-width: 767px) {
-  .menu-list {
+@media (max-width: 768px) {
+  .nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -16,13 +16,13 @@
     height: 100%;
     padding: 40px 30px;
     background-color: #ffffff;
-    transform: translateY(-100%);
+    /* transform: translateY(-100%); */
     z-index: 5;
   }
   .menu-list {
     display: block;
     padding: 25px 0;
     font-size: 34px;
-    line-height: 39px;
+    line-height: 2;
   }
 }

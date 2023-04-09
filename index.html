@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="conteiner">
   <header class="header">
@@ -50,9 +50,9 @@
       <div class="wrap-information">
         <h1 class="head head-rectangle">Обо мне</h1>
         <div class="text text-info">
-          <p> Привет, меня зовут Анна. Я Frontend разработчик из Челябинска. <br> Мне интересна веб-разработка и все что этим связано.</p> 
-          <p> Сейчас я учусь на курсе "Frontend Dev" в Napoleon IT School.</p>
-          <p> Планирую и дальше развиваться в этой сфере. Рассмотрю любое <br> коммерческое предложение о сотрудничестве.</p>
+          <p>Привет, меня зовут Анна. Я&nbsp;Frontend разработчик из&nbsp;Челябинска. Мне интересна <nobr>веб-разработка</nobr> и&nbsp;все что этим связано.<br/></p>
+          <p>Сейчас я&nbsp;учусь на&nbsp;курсе &laquo;Frontend Dev&raquo; в&nbsp;Napoleon IT&nbsp;School.<br/></p>
+          <p>Планирую и&nbsp;дальше развиваться в&nbsp;этой сфере. Рассмотрю любое коммерческое предложение о&nbsp;сотрудничестве.</p>
         </div>
       </div>  
     </section>
@@ -61,7 +61,7 @@
       <p class="text text-technology">используемые технологии:</p>
       <div class="skills-list">
         <div class="skills-item">
-          <img src="./img/html-logo.png" alt="Иконка HTML" class="img-skills" width="161" height="182">
+          <img src="./img/html-logo.png" alt="Иконка HTML" width="161" height="182">
           <p class="skills-style">html</p>
         </div>
         <div class="skills-item">
@@ -98,7 +98,9 @@
         <h1 class="head head-rectangle">Контакты</h1>
         <div class="wrap-feedback">
           <p class="text text-contacts">Хотите связаться со мной или <br> узнать больше?</p>
-          <a class="button button-feedback" href="#">Напиши мне</a> <!--ссылка на модалку-->
+        </div>
+        <div>
+          <a class="button button-feedback" href="#!">Напиши мне</a> <!--ссылка на модалку-->
         </div>  
         <div class="social-list">
           <a href="#">
@@ -110,25 +112,35 @@
           <a href="#">
             <img src="./img/instagram.png" alt="Instagram" width="75" height="75">
           </a>
-          <p class="social-text">Мои аккаунты в Vk, Telegram, <br> Instagram </p>
-        </div> <!-- вставить иконки через бэкграунд в css -->
+        </div>
+        <div class="social-text"> 
+          <p>Мои аккаунты в Vk, Telegram, <br> Instagram </p><!-- вставить иконки через бэкграунд в css -->
+        </div>
       </div>  
     </section>
   </footer>
-  <div class="modal-form">
-    <form action="" method="get">
-      <p class="modal-text"> Оставьте заявку! <br> Я позвоню вам в ближайшее время</p> <!--посмотреть в интенсиве как называют класс-->
-      <label class="name">
-        Имя
-        <input class="field-line" type="text" name="name" value="" placeholder="">
-      </label>
-      <label class="tel">
-        Телефон
-        <input class="field-line" type="tel" name="tel" value="" placeholder="" required>
-      </label>
-      <p class="modal-text-button">*Нажимая эту кнопку вы даете согласие на обработку персональных данных</p> <!--или lable? звездочку поставить наверх-->
-      <button class="button button-submit" type="submit">Отправить</button>
+
+  <section class="modal modal-feedback modal-hidden">
+    <h2 class="head-hidden">Форма заявки</h2>
+
+    <form class="form-login" autocomplete="off" action="#" method='post'>
+      <p class="modal-text"> Оставьте заявку! <br> Я позвоню вам в ближайшее время</p>
+      <div class="wrap-feedback"> 
+          <div>
+              <label class="login-name" for="login-login">Имя</label>
+              <input id="login-login" type="text" name='login' placeholder="Инна" required>                   
+          </div>    
+          <div>
+              <label for="login-tel">Телефон</label>
+              <input class="login-tel" id="login-tel" type='tel' name='password' placeholder="+7 (908) 080 18 80" required>
+          </div>   
+          <div class="btn-form">
+            <label class="modal-text-button" for="button">*Нажимая эту кнопку вы даете согласие на обработку персональных данных</label>
+            <button class="button button-submit" type="submit" aria-label="Отправить" id="button">Отправить</button>
+          </div>  
+          </div>
     </form>
-</div>
+    <button class="modal-close" type="button" aria-label="Закрыть"> Закрыть </button>
+</section> 
 </body>
 </html>

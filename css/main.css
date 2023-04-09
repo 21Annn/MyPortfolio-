@@ -18,10 +18,9 @@ img {
   --basic-black: #000000;
 }
 .conteiner {
-  width: 100%;
+  max-width: 1500px;
   margin: 0 auto;
-  height: 0 auto;
-  padding: 0 20px;
+  padding: 0 30px;
   font-family: "Ubuntu Mono";
 }
 
@@ -49,25 +48,18 @@ a {
 .text {
   font-family: "Ubuntu Mono", sans-serif;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 1;
   color: var(--dark-black);
 }
 .button {
   font-family: "Rubik Mono", monospace;
-  font-size: 14px;
+  font-size: 16px;
   padding: 12px 43px;
   text-align: center;
   text-decoration: none;
   background-color: var(--basic-black);
   color: #F6F6F6;
-  border: 2px solid var(--basic-black);
-  border-radius: 60px;
-}
-.social-text {
-  font-family: "Ubuntu Mono", monospace;
-  font-size: 12px;
-  line-height: 11px;
-  color: var(--dark-grey);
+  border-radius: 60px; 
 }
 
 /* Navigation */
@@ -94,10 +86,9 @@ a {
 .nav {
   width: calc(100%);
   display: flex;
-  justify-content: space-between;
+
 }
 .logo {
-  display: flex;
   width: calc(100%/3);
 }
 .menu-list {
@@ -110,11 +101,15 @@ a {
 }
 
 .link-item {
+  padding: 15px 30px;
   font-family: "Ubuntu Mono", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 18px;
   color: var(--dark-grey);
+}
+.menu-item:last-child .link-item {
+  padding-right: 0;
 }
 .link-item:hover {
   color: #000000;
@@ -143,10 +138,11 @@ a {
   padding: 0;
   margin-top: 100px;
 
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 .wrap-info {
   display: flex;
+  justify-content: space-between;
   width: 639px;
   height: 169px;
 
@@ -157,10 +153,11 @@ a {
   font-size: 48px;
   font-weight: 700;
   text-align: start;
-  width: 191px;
+  max-width: 191px;
   height: 110px;
-  margin: 0 100px 0 0;
+  column-gap: 30px;
   padding: 50px 0 35px 20px;
+  line-height: 1;
 
   /* border: 1px solid red; */
 }
@@ -170,6 +167,7 @@ a {
   margin: 0;
   padding: 55px 0 80px 0;
   font-size: 24px;
+  line-height: 1;
 }
 .person-img {
   display: inline-block;
@@ -199,36 +197,10 @@ a {
 
   /* border: 1px solid red; */
 }
-.head-rectangle::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 23px;
-  height: 23px;
-  left: -40;
-  top: 100;
-  background: url(../img/Rectangle\ 2.svg) 0 0 no-repeat;
-}
-.head-rectangle {
-  margin: 0;
-  padding: 0;
-  position: relative;
-
-  /* border: 1px solid red; */
-}
-.head-rectangle::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 23px;
-  height: 23px;
-  left: -100;
-  top: 10;
-  background: url(../img/Rectangle\ 2.svg) 0 0 no-repeat;
-}
 .text-info {
-  text-align: center;
   padding: 0;
+  text-align: center;
+  line-height: 1;
   width: 798px;
   height: 199px;
 }
@@ -237,14 +209,13 @@ a {
 
 .skills {
   width: 960px;
+  height: 600px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  height: 600px;
   margin-top: 60px;
 }
 .head-skill {
-  margin: 0;
   padding: 0 10px;
   margin-bottom: 50px;
 }
@@ -275,23 +246,22 @@ a {
   flex-direction: column;
   align-items: center;
 }
-.img-skills {
-  width: 100%;
-}
 .skills-style {
+  position: relative;
   font-family: "Rubik Mono", monospace;
   font-size: 22px;
   line-height: 17px;
   color: var(--basic-black);
+  margin-top: 20px;
 }
 .skills-style::after {
   content: "";
   position: absolute;
   display: block;
+  top: 30px;
+  left: 0;
   width: 23px;
   height: 23px;
-  left: -100;
-  top: 10;
   background-color: #000000;
   background: url(../img/Star.svg) 0 0 no-repeat;
 }
@@ -345,28 +315,227 @@ a {
 /* Footer */
 
 .contacts {
-
-}
-.wrap-contacts {
-  width: 960px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  width: 100%;
+  padding: 80px 0;
+  text-align: center;
 
   /* border: 2px solid green; */
 }
+.wrap-contacts {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  /* border: 2px solid green; */
+}
+.head-rectangle::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 23px;
+  height: 23px;
+  right: 0;
+  top: 0;
+  background: url(../img/Rectangle\ 2.svg) 0 0 no-repeat;
+}
+.head-rectangle {
+  margin: 0 0 50px 0;
+  padding: 0;
+  position: relative;
+
+  /* border: 1px solid red; */
+}
+.head-rectangle::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 23px;
+  height: 23px;
+  left: 0;
+  top: 0;
+  background: url(../img/Rectangle\ 2.svg) 0 0 no-repeat;
+}
 .text-contacts {
-  text-align: center;
-  margin-bottom: 53px;
+  font-family: "Ubuntu Mono", sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  margin: 0 0 60px 0;
+
+  /* border: 2px solid green; */
+}
+.text-contacts p + p {
+  margin-top: 1em;
 }
 .button-feedback {
-  display: block;
+  display: inline-block;
+  margin: 0 0 60px 0;
+  transition: background-color 0.2s ease-in, top 0.2s ease-in;
+}
+.button-feedback:hover, .button-feedback:focus {
+  background-color: #2a2727; 
+}
+.button-feedback:active {
+  position: relative;
+  top: 1px;
+  background-color: #221f1f;
 }
 .social-list {
-  margin-top: 59px;
+  margin: 0 0 50px 0;
 }
 .social-text {
-  text-align: center;
+  font-family: "Ubuntu Mono", sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  color: var(--dark-grey);
 }
+
+/* Modal */
+
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .75);
+  z-index: 2;
+}
+.form-login {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-close {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+} 
+
+/* Form-modal  */
+
+.form-login {
+  padding: 50px 50px;
+  width: 850px;
+  background-color: #fff;
+}
+
+.modal-text {
+  font-family: "Ubuntu Mono", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  width: 400px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+/* .modal-hidden {
+  display: none;
+} */
+
+.login-name label::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 2px;
+  border-bottom: 2px solid #000000;
+}
+
+.btn-form {
+  display: flex;
+}
+.modal-text-button {
+  width: 160px;
+  text-align: center;
+  margin: 15px 30px;
+}
+.button-submit {
+ 
+}
+
+/* Modal Lost */
+/* 
+.modal-hidden {
+  display: none;
+}
+
+.modal-lost.modal-show {
+  display: block;
+  top: auto;
+  bottom: 120px;
+  max-width: 350px;
+  max-height: 359px;
+  padding: 30px 60px;
+}
+.form-send-mail {
+  width: 100%;
+max-width: 350px;
+}
+.wrap-send-mail {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+padding: 0 20px;
+box-sizing: border-box;
+  font-size: 14px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.wrap-send-mail div {
+  font-size: 18px;
+  padding: 15px 0;
+}
+.button-send-mail {
+box-sizing: border-box;
+width: 100%;
+}
+.wrap-send-mail label, .wrap-send-mail input {
+width: 100%;
+box-sizing: border-box;
+}
+.wrap-send-mail label {
+  display: inline-block;
+font-weight: bold;
+  text-align: left;
+}
+.wrap-send-mail input {
+  font-family: "Cuprum", sans-serif;
+padding: 10px 15px;
+margin-top: 5px;
+  outline: none;
+  color: var(--bright-red);
+}
+.wrap-send-mail .button-send-mail {
+  margin-bottom: 20px;
+  width: 50%; 
+  padding: 11px;
+  margin-left: auto;
+margin-top: 10px;
+background: none;
+border: none;
+text-transform: uppercase;
+color: #fff;
+font-weight: bold;
+background-color: var(--bright-red);
+cursor: pointer;
+border-radius: 3px;
+}
+.wrap-send-mail .button-send-mail:hover {
+background-color: #c62e38;
+}
+.wrap-send-mail .button-send-mail:focus {
+background-color: #b51f29;
+} */
+
+
+/* 1. Добавить классы в p (text-info) стилизовать параграфы "обо мне"  */
