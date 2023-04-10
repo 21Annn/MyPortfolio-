@@ -3,7 +3,6 @@
 @import "./font.css";
 
 /* Variabls */
-
 * {
   box-sizing: border-box;
 }
@@ -70,34 +69,32 @@ a {
   top: 0;
   left: 0;
   z-index: 1;
+  background-color: #ffffff;
 }
-
-.main-navigation {
+.nav-conteiner {
+  margin: 0 auto;
+  padding: 0 20px;
   width: 960px;
   height: 100px;
+}
+.wrap-navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
   background-color: #ffffff;
 
   /* border: 2px solid saddlebrown; */
 }
-.nav {
+.main-nav {
   width: calc(100%);
   display: flex;
-
-}
-.logo {
-  width: calc(100%/3);
 }
 .menu-list {
   width: calc(100%);
+  margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: space-between;
-}
-.menu-list {
-  display: flex;
+  justify-content: space-around;
 }
 
 .link-item {
@@ -105,7 +102,7 @@ a {
   font-family: "Ubuntu Mono", sans-serif;
   font-weight: 700;
   font-size: 24px;
-  line-height: 18px;
+  line-height: 1;
   color: var(--dark-grey);
 }
 .menu-item:last-child .link-item {
@@ -119,7 +116,7 @@ a {
 .botton-menu-open {
   display: block;
 }
-.hidden {
+.hidden-hamburger {
   display: none;
 }
 
@@ -393,6 +390,7 @@ a {
 /* Modal */
 
 .modal {
+  display: none;
   position: fixed;
   width: 100%;
   height: 100%;
